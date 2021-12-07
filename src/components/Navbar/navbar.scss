@@ -1,0 +1,27 @@
+@import "../../scss/configurations";
+
+.header-icon {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.vr {
+  height: 2px;
+  width: 473px;
+  border: solid 1px $white;
+  position: absolute;
+  opacity: 0.1;
+  left: 200px;
+  top: 42px;
+}
+
+.navbar {
+  background-color: #ffffff08;
+  backdrop-filter: blur(15px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 96px;
+  width: 800px;
+}

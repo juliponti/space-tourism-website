@@ -1,0 +1,11 @@
+// Colors
+
+$primary-color: #0b0d17;
+$secondary-color: #d0d6f9;
+$white: #ffffff;
+
+@mixin FlexBox($direction: row, $justify: center, $align: center) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
