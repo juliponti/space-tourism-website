@@ -5,7 +5,14 @@ $secondary-color: #d0d6f9;
 $white: #ffffff;
 
 @mixin FlexBox($direction: row, $justify: center, $align: center) {
+  display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin NavFontStyle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  letter-spacing: 4.75px;
 }
