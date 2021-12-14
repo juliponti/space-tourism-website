@@ -1,5 +1,5 @@
+import Navbar from "../../components/Navbar/navbar.js";
 import "./app.scss";
-import Navbar from "./components/Navbar/navbar.js";
 
 function App() {
   return (
@@ -7,7 +7,6 @@ function App() {
       <header className="header">
         <Navbar />
       </header>
-      <body></body>
     </div>
   );
 }

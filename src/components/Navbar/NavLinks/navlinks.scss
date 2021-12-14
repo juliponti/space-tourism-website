@@ -11,14 +11,27 @@
     display: flex;
     height: 96px;
     align-items: center;
+    text-decoration: none;
+    color: $white;
 
     &_number {
       @include NavFontStyle;
       margin-right: 10px;
+      font-weight: 700;
     }
 
     &_text {
       @include NavFontStyle;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $hover;
+      cursor: pointer;
+    }
+
+    &:active {
+      border-bottom: 3px solid $white;
+      cursor: pointer;
     }
   }
 }

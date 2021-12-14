@@ -3,6 +3,7 @@
 $primary-color: #0b0d17;
 $secondary-color: #d0d6f9;
 $white: #ffffff;
+$hover: #acaaaa;
 
 @mixin FlexBox($direction: row, $justify: center, $align: center) {
   display: flex;
@@ -13,6 +14,6 @@ $white: #ffffff;
 
 @mixin NavFontStyle {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 28px;
-  letter-spacing: 4.75px;
+  font-size: 16px;
+  letter-spacing: 2.7px;
 }
