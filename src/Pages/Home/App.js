@@ -1,9 +1,9 @@
 import Navbar from "../../components/Navbar/navbar.js";
-import "./app.scss";
+import "../../assets/main.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header className="header">
         <Navbar />
       </header>
