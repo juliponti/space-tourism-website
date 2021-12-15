@@ -389,6 +389,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .absolute{
   position: absolute;
 }
+.top-12{
+  top: 3rem;
+}
+.right-0{
+  right: 0px;
+}
 .top-5{
   top: 1.25rem;
 }
@@ -398,14 +404,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-\[186px\]{
   left: 186px;
 }
-.top-12{
-  top: 3rem;
-}
 .top-0{
   top: 0px;
-}
-.right-0{
-  right: 0px;
 }
 .z-10{
   z-index: 10;
@@ -416,26 +416,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex{
   display: flex;
 }
+.h-full{
+  height: 100%;
+}
+.h-24{
+  height: 6rem;
+}
 .h-0\.5{
   height: 0.125rem;
 }
 .h-0{
   height: 0px;
 }
-.h-24{
-  height: 6rem;
-}
-.h-full{
-  height: 100%;
+.w-full{
+  width: 100%;
 }
 .w-\[473px\]{
   width: 473px;
 }
 .w-\[830px\]{
   width: 830px;
-}
-.w-full{
-  width: 100%;
 }
 .list-none{
   list-style-type: none;
