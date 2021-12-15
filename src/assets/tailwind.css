@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-font-style {
+  @apply font-Barlow text-base tracking-costumize;
+}

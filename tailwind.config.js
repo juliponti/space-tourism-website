@@ -10,6 +10,9 @@ module.exports = {
         Barlow: "Barlow Condensed",
         Belle: "Bellefair",
       },
+      letterSpacing: {
+        costumize: "2.7px",
+      },
     },
   },
   plugins: [],

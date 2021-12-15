@@ -2,29 +2,41 @@ import { NavLink } from "react-router-dom";
 
 function NavLinks() {
   return (
-    <ol className="navbar__list">
-      <li className="navbar__list-item">
-        <NavLink to="/" className="navbar__list-link">
-          <span className="navbar__list-link_number">01</span>
-          <span className="navbar__list-link_text">HOME</span>
+    <ol className="flex justify-evenly items-center w-full h-full list-none ">
+      <li>
+        <NavLink
+          to="/"
+          className="flex h-24 items-center no-underline text-white hover:border-b-[3px] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer"
+        >
+          <span className="nav-font-style mr-[10px] font-bold ">00</span>
+          <span className="nav-font-style">HOME</span>
         </NavLink>
       </li>
-      <li className="navbar__list-item">
-        <NavLink to="/destination" className="navbar__list-link">
-          <span className="navbar__list-link_number">02</span>
-          <span className="navbar__list-link_text">DESTINATION</span>
+      <li>
+        <NavLink
+          to="/destination"
+          className="flex h-24 items-center no-underline text-white hover:border-b-[3px] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer"
+        >
+          <span className="nav-font-style mr-[10px] font-bold ">01</span>
+          <span className="nav-font-style">DESTINATION</span>
         </NavLink>
       </li>
-      <li className="navbar__list-item">
-        <NavLink to="/crew" className="navbar__list-link">
-          <span className="navbar__list-link_number">03</span>
-          <span className="navbar__list-link_text">CREW</span>
+      <li>
+        <NavLink
+          to="/crew"
+          className="flex h-24 items-center no-underline text-white hover:border-b-[3px] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer"
+        >
+          <span className="nav-font-style mr-[10px] font-bold ">02</span>
+          <span className="nav-font-style">CREW</span>
         </NavLink>
       </li>
-      <li className="navbar__list-item">
-        <NavLink to="/technology" className="navbar__list-link">
-          <span className="navbar__list-link_number">04</span>
-          <span className="navbar__list-link_text">TECHNOLOGY</span>
+      <li>
+        <NavLink
+          to="/technology"
+          className="flex h-24 items-center no-underline text-white hover:border-b-[3px] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer"
+        >
+          <span className="nav-font-style mr-[10px] font-bold ">03</span>
+          <span className="nav-font-style">TECHNOLOGY</span>
         </NavLink>
       </li>
     </ol>
