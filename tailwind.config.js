@@ -7,13 +7,21 @@ module.exports = {
         details: "#d0d6f9",
       },
       fontFamily: {
-        Barlow: "Barlow Condensed",
+        BarlowCo: "Barlow Condensed",
+        Barlow: "Barlow",
         Belle: "Bellefair",
       },
       letterSpacing: {
-        costumize: "2.7px",
+        navbar: "2.7px",
+        home: "4.72px",
+
+
+      },
+      backgroundImage: {
+        'desktop-home': "url('/src/assets/home/background-home-desktop.jpg')",
+        },
       },
     },
-  },
+
   plugins: [],
 };

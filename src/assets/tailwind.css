@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@200;300;400&family=Bellefair&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .nav-font-style {
-  @apply font-Barlow text-base tracking-costumize;
+  @apply font-BarlowCo text-base tracking-navbar;
 }
