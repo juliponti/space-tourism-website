@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+//import { useState } from "react";
+//import Destination from "../../../Pages/Destination/destination";
+//import Data from "../../../data.json";
 
 function NavLinks() {
   return (

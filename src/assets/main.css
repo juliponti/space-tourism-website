@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@200;300;400&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@200;300;400&family=Bellefair&display=swap");
 
 /*
 ! tailwindcss v3.0.2 | MIT License | https://tailwindcss.com
@@ -498,6 +498,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-desktop-destination{
+  background-image: url(/src/assets/destination/background-destination-desktop.jpg);
+}
 .bg-desktop-home{
   background-image: url('/src/assets/home/background-home-desktop.jpg');
 }
@@ -549,13 +552,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-home{
   letter-spacing: 4.72px;
 }
-.text-details{
-  --tw-text-opacity: 1;
-  color: rgb(208 214 249 / var(--tw-text-opacity));
-}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-details{
+  --tw-text-opacity: 1;
+  color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 .no-underline{
   text-decoration: none;
@@ -585,6 +588,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 2.7px;
+}
+
+.destination{
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:scale-110:hover{
