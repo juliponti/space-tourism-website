@@ -415,6 +415,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-left-\[440px\]{
   left: -440px;
 }
+.left-\[166\.5px\]{
+  left: 166.5px;
+}
+.top-52{
+  top: 13rem;
+}
 .left-40{
   left: 10rem;
 }
@@ -429,6 +435,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .z-10{
   z-index: 10;
+}
+.mr-3{
+  margin-right: 0.75rem;
 }
 .mr-\[10px\]{
   margin-right: 10px;
@@ -548,6 +557,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[36\2c 67px\]{
   line-height: 36,67px;
+}
+.tracking-destination{
+  letter-spacing: 4.725px;
 }
 .tracking-home{
   letter-spacing: 4.72px;

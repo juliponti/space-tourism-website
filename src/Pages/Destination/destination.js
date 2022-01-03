@@ -10,11 +10,12 @@ export default function Destination() {
   return (
     <div className="h-full bg-cover bg-fixed bg-center bg-no-repeat bg-desktop-destination">
       <Header />
-      <h1 className="destination text-[28px] text-white ">
-        <span className="destination opacity-25">01</span>PICK YOUR DESTINATION
+      <h1 className="destination text-[28px] text-white absolute left-[166.5px] top-52 tracking-destination">
+        <span className="destination opacity-25 mr-3">01</span>PICK YOUR
+        DESTINATION
       </h1>
       <div>
-        <img src={selectedPlanet.images.png} alt="" />
+        <img src={selectedPlanet.images.webp} alt="" />
         <ul>
           {destinations.map((planet) => (
             <li

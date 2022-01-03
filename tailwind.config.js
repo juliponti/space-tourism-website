@@ -14,6 +14,7 @@ module.exports = {
       letterSpacing: {
         navbar: "2.7px",
         home: "4.72px",
+        destination: "4.725px",
       },
       backgroundImage: {
         "desktop-home": "url('/src/assets/home/background-home-desktop.jpg')",
