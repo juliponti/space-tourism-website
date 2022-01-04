@@ -421,6 +421,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-52{
   top: 13rem;
 }
+.left-56{
+  left: 14rem;
+}
+.top-\[343px\]{
+  top: 343px;
+}
+.right-\[11rem\]{
+  right: 11rem;
+}
+.bottom-\[35rem\]{
+  bottom: 35rem;
+}
+.bottom-\[260px\]{
+  bottom: 260px;
+}
+.right-\[3\.6rem\]{
+  right: 3.6rem;
+}
+.bottom-\[13rem\]{
+  bottom: 13rem;
+}
+.bottom-\[6rem\]{
+  bottom: 6rem;
+}
+.right-\[307px\]{
+  right: 307px;
+}
+.right-\[80px\]{
+  right: 80px;
+}
 .left-40{
   left: 10rem;
 }
@@ -438,6 +468,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-3{
   margin-right: 0.75rem;
+}
+.mr-9{
+  margin-right: 2.25rem;
 }
 .mr-\[10px\]{
   margin-right: 10px;
@@ -457,6 +490,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full{
   height: 100%;
 }
+.h-\[445px\]{
+  height: 445px;
+}
 .h-\[382px\]{
   height: 382px;
 }
@@ -472,14 +508,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[473px\]{
   width: 473px;
 }
+.w-\[445px\]{
+  width: 445px;
+}
+.w-\[444px\]{
+  width: 444px;
+}
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .w-\[450px\]{
   width: 450px;
 }
 .w-\[247px\]{
   width: 247px;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .list-none{
   list-style-type: none;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
 }
 .items-center{
   align-items: center;
@@ -537,6 +592,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[28px\]{
   font-size: 28px;
 }
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-\[14px\]{
+  font-size: 14px;
+}
 .text-\[150px\]{
   font-size: 150px;
 }
@@ -552,14 +622,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-bold{
   font-weight: 700;
 }
+.uppercase{
+  text-transform: uppercase;
+}
+.leading-9{
+  line-height: 2.25rem;
+}
+.leading-\[145px\]{
+  line-height: 145px;
+}
 .leading-8{
   line-height: 2rem;
+}
+.leading-\[17px\]{
+  line-height: 17px;
+}
+.leading-loose{
+  line-height: 2;
 }
 .leading-\[36\2c 67px\]{
   line-height: 36,67px;
 }
 .tracking-destination{
   letter-spacing: 4.725px;
+}
+.tracking-navbar{
+  letter-spacing: 2.7px;
 }
 .tracking-home{
   letter-spacing: 4.72px;
@@ -577,6 +665,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .opacity-25{
   opacity: 0.25;
+}
+.opacity-10{
+  opacity: 0.1;
 }
 .outline{
   outline-style: solid;
