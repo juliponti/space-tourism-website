@@ -551,9 +551,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border{
   border-width: 1px;
 }
+.border-b{
+  border-bottom-width: 1px;
+}
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-b-white{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-\[\#ffffff08\]{
   background-color: #ffffff08;
@@ -698,6 +705,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 28px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.ul-destination{
+  margin-right: 2.25rem;
+  cursor: pointer;
+  font-family: Barlow Condensed;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 2.25rem;
+  letter-spacing: 2.7px;
+  --tw-text-opacity: 1;
+  color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 
 .hover\:scale-110:hover{

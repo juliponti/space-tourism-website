@@ -23,7 +23,9 @@ export default function Destination() {
         <ul className="flex flex-row absolute right-[11rem] bottom-[35rem]">
           {destinations.map((planet) => (
             <li
-              className="text-details font-BarlowCo mr-9 uppercase text-base tracking-navbar cursor-pointer leading-9"
+              className={`text-details font-BarlowCo mr-9 uppercase text-base tracking-navbar cursor-pointer leading-9 ${
+                selectedPlanet.name == planet.name && "border-b border-b-white"
+              } `}
               onClick={() => setSelectedPlanet(planet)}
               key={planet.name}
             >
