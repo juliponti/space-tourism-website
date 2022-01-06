@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 .nav-font-style {
-  @apply font-BarlowCo text-base tracking-navbar;
+  @apply font-BarlowCo text-base tracking-primary;
 }
 
-.destination {
+.section-title {
   @apply text-[28px] text-white font-BarlowCo;
 }
