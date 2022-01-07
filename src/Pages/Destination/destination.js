@@ -10,8 +10,8 @@ export default function Destination() {
   return (
     <div className="h-full bg-cover bg-fixed bg-center bg-no-repeat bg-desktop-destination">
       <Header />
-      <h1 className="destination text-[28px] text-white absolute left-[166.5px] top-52 tracking-destination">
-        <span className="destination opacity-25 mr-3">01</span>PICK YOUR
+      <h1 className="section-title text-[28px] text-white absolute left-[166.5px] top-52 tracking-secondary">
+        <span className="section-title opacity-25 mr-3">01</span>PICK YOUR
         DESTINATION
       </h1>
       <div>
@@ -23,8 +23,8 @@ export default function Destination() {
         <ul className="flex flex-row absolute right-[11rem] bottom-[35rem]">
           {destinations.map((planet) => (
             <li
-              className={`text-details font-BarlowCo mr-9 uppercase text-base tracking-navbar cursor-pointer leading-9 ${
-                selectedPlanet.name == planet.name && "border-b border-b-white"
+              className={`text-details font-BarlowCo mr-9 uppercase text-base tracking-primary cursor-pointer leading-9 ${
+                selectedPlanet.name === planet.name && "border-b border-b-white"
               } `}
               onClick={() => setSelectedPlanet(planet)}
               key={planet.name}
@@ -43,16 +43,16 @@ export default function Destination() {
         </div>
         <div className="border bg-white w-[444px] absolute bottom-[13rem] right-[3.6rem] opacity-10" />
 
-        <div className=" absolute bottom-[6rem] right-[307px] leading-[17px] tracking-navbar">
-          <h3 className="text-details tracking-navbar w-fit text-[14px] font-BarlowCo">
+        <div className=" absolute bottom-[6rem] right-[307px] leading-[17px] tracking-primary">
+          <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
             AVG. DISTANCE
           </h3>
           <span className="font-Belle text-[28px] text-white leading-loose uppercase">
             {selectedPlanet.distance}
           </span>
         </div>
-        <div className=" absolute bottom-[6rem] right-[80px] leading-[17px] tracking-navbar">
-          <h3 className="text-details tracking-navbar w-fit text-[14px] font-BarlowCo">
+        <div className=" absolute bottom-[6rem] right-[80px] leading-[17px] tracking-primary">
+          <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
             EST. TRAVEL TIME
           </h3>
           <span className="font-Belle text-[28px] text-white leading-loose uppercase">

@@ -421,6 +421,54 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-52{
   top: 13rem;
 }
+.left-40{
+  left: 10rem;
+}
+.top-96{
+  top: 24rem;
+}
+.top-\[452px\]{
+  top: 452px;
+}
+.top-\[543px\]{
+  top: 543px;
+}
+.left-\[167px\]{
+  left: 167px;
+}
+.top-\[791px\]{
+  top: 791px;
+}
+.left-\[206px\]{
+  left: 206px;
+}
+.left-\[245px\]{
+  left: 245px;
+}
+.left-\[284px\]{
+  left: 284px;
+}
+.left-\[795px\]{
+  left: 795px;
+}
+.top-\[198px\]{
+  top: 198px;
+}
+.left-\[840px\]{
+  left: 840px;
+}
+.top-\[260px\]{
+  top: 260px;
+}
+.top-\[255px\]{
+  top: 255px;
+}
+.left-\[767px\]{
+  left: 767px;
+}
+.top-\[298px\]{
+  top: 298px;
+}
 .left-56{
   left: 14rem;
 }
@@ -450,9 +498,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .right-\[80px\]{
   right: 80px;
-}
-.left-40{
-  left: 10rem;
 }
 .bottom-28{
   bottom: 7rem;
@@ -490,6 +535,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full{
   height: 100%;
 }
+.h-4{
+  height: 1rem;
+}
 .h-\[445px\]{
   height: 445px;
 }
@@ -508,11 +556,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[473px\]{
   width: 473px;
 }
-.w-\[445px\]{
-  width: 445px;
-}
 .w-\[444px\]{
   width: 444px;
+}
+.w-4{
+  width: 1rem;
+}
+.w-\[445px\]{
+  width: 445px;
 }
 .w-fit{
   width: -moz-fit-content;
@@ -554,6 +605,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-b{
   border-bottom-width: 1px;
 }
+.border-b-2{
+  border-bottom-width: 2px;
+}
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -568,6 +622,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-desktop-crew{
+  background-image: url(/src/assets/crew/background-crew-desktop.jpg);
 }
 .bg-desktop-destination{
   background-image: url(/src/assets/destination/background-destination-desktop.jpg);
@@ -587,17 +644,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
-.font-BarlowCo{
-  font-family: Barlow Condensed;
-}
 .font-Belle{
   font-family: Bellefair;
 }
 .font-Barlow{
   font-family: Barlow;
 }
+.font-BarlowCo{
+  font-family: Barlow Condensed;
+}
 .text-\[28px\]{
   font-size: 28px;
+}
+.text-\[32px\]{
+  font-size: 32px;
+}
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-base{
   font-size: 1rem;
@@ -607,10 +675,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 6rem;
   line-height: 1;
 }
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -619,9 +683,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[18px\]{
   font-size: 18px;
-}
-.text-\[32px\]{
-  font-size: 32px;
 }
 .font-thin{
   font-weight: 100;
@@ -650,14 +711,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-\[36\2c 67px\]{
   line-height: 36,67px;
 }
-.tracking-destination{
-  letter-spacing: 4.725px;
-}
-.tracking-navbar{
-  letter-spacing: 2.7px;
-}
-.tracking-home{
+.tracking-secondary{
   letter-spacing: 4.72px;
+}
+.tracking-primary{
+  letter-spacing: 2.7px;
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -672,6 +730,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .opacity-25{
   opacity: 0.25;
+}
+.opacity-50{
+  opacity: 0.5;
+}
+.opacity-\[0\.17\]{
+  opacity: 0.17;
+}
+.opacity-100{
+  opacity: 1;
 }
 .opacity-10{
   opacity: 0.1;
@@ -700,23 +767,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 2.7px;
 }
 
-.destination{
+.section-title{
   font-family: Barlow Condensed;
   font-size: 28px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.ul-destination{
-  margin-right: 2.25rem;
-  cursor: pointer;
-  font-family: Barlow Condensed;
-  font-size: 1rem;
-  text-transform: uppercase;
-  line-height: 2.25rem;
-  letter-spacing: 2.7px;
-  --tw-text-opacity: 1;
-  color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 
 .hover\:scale-110:hover{
@@ -727,10 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
-}
-
-.hover\:border-b-\[3px\]:hover{
-  border-bottom-width: 3px;
 }
 
 .hover\:border-b-gray-400:hover{

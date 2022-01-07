@@ -6,7 +6,7 @@ function App() {
       <Header />
       <div className="h-[382px] w-[450px] absolute left-40 bottom-28 ">
         <h1
-          className="font-BarlowCo tracking-home text-[28px] leading-8 text-details"
+          className="font-BarlowCo tracking-secondary text-[28px] leading-8 text-details"
           style={{ WebkitTextStroke: 1, WebkitTextStrokeColor: " #000000" }}
         >
           SO, YOU WANT TO TRAVEL TO

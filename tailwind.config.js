@@ -12,9 +12,8 @@ module.exports = {
         Belle: "Bellefair",
       },
       letterSpacing: {
-        navbar: "2.7px",
-        home: "4.72px",
-        destination: "4.725px",
+        primary: "2.7px",
+        secondary: "4.72px",
       },
       backgroundImage: {
         "desktop-home": "url('/src/assets/home/background-home-desktop.jpg')",
