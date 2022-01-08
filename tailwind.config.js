@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary: "#0b0d17",
         details: "#d0d6f9",
+        number: "#0B0D17",
       },
       fontFamily: {
         BarlowCo: "Barlow Condensed",

@@ -37,7 +37,7 @@ export default function Destination() {
           <h2 className="font-Belle text-8xl text-white uppercase leading-[145px]">
             {selectedPlanet.name}
           </h2>
-          <p className="text-lg text-details w-[444px] leading-8">
+          <p className="text-lg text-details w-[444px] leading-8 font-thin font-Barlow">
             {selectedPlanet.description}
           </p>
         </div>

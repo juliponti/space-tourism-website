@@ -59,6 +59,7 @@ export default function Crew() {
             : selectedCrew === crew[3] && "top-[298px] left-[767px]"
         } `}
         src={selectedCrew.images.webp}
+        alt={selectedCrew.name}
       />
     </div>
   );
