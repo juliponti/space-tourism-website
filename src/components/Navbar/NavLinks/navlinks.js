@@ -10,7 +10,7 @@ function NavLinks(props) {
       <NavLink
         to={link}
         onClick={() => setIsActive(!isActive)}
-        className={`h-8 flex items-center no-underline text-white hover:border-b-[3x] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer md:h-24 ${
+        className={`h-8 flex items-center no-underline text-white hover:border-b-[3px] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer md:h-24 ${
           isActive && "border-b-2 border-b-white"
         }`}
       >

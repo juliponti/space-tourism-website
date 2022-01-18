@@ -5,11 +5,7 @@ import MobileNavigation from "./mobilenavigation.js";
 function Navbar() {
   return (
     <>
-      <img
-        src={NavIcon}
-        className="absolute left-[17px] lg:top-5 lg:left-[4.25rem]"
-        alt="star logo"
-      />
+      <img src={NavIcon} className="" alt="star logo" />
       <Navigation />
       <MobileNavigation />
     </>

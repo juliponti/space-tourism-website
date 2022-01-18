@@ -394,20 +394,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+.fixed{
+  position: fixed;
+}
 .absolute{
   position: absolute;
 }
-.top-4{
-  top: 1rem;
-}
 .right-0{
   right: 0px;
-}
-.top-\[-10px\]{
-  top: -10px;
-}
-.left-\[17px\]{
-  left: 17px;
 }
 .top-0{
   top: 0px;
@@ -472,42 +466,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-\[298px\]{
   top: 298px;
 }
-.left-56{
-  left: 14rem;
-}
-.top-\[343px\]{
-  top: 343px;
-}
-.left-\[832px\]{
-  left: 832px;
-}
-.top-\[310px\]{
-  top: 310px;
-}
-.bottom-\[-3rem\]{
-  bottom: -3rem;
-}
-.right-\[0\.3rem\]{
-  right: 0.3rem;
-}
-.bottom-\[-9rem\]{
-  bottom: -9rem;
-}
-.right-\[260px\]{
-  right: 260px;
-}
-.right-\[50px\]{
-  right: 50px;
-}
-.top-\[104px\]{
-  top: 104px;
-}
-.left-\[109px\]{
-  left: 109px;
-}
-.bottom-\[23px\]{
-  bottom: 23px;
-}
 .left-\[165px\]{
   left: 165px;
 }
@@ -532,11 +490,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto{
   margin: auto;
 }
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .mr-3{
   margin-right: 0.75rem;
-}
-.mr-9{
-  margin-right: 2.25rem;
 }
 .mr-\[10px\]{
   margin-right: 10px;
@@ -562,9 +525,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-4{
   height: 1rem;
 }
-.h-\[445px\]{
-  height: 445px;
-}
 .h-\[150px\]{
   height: 150px;
 }
@@ -574,8 +534,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-14{
   height: 3.5rem;
 }
+.h-8{
+  height: 2rem;
+}
 .min-h-\[99vh\]{
   min-height: 99vh;
+}
+.min-h-\[90\%\]{
+  min-height: 90%;
 }
 .w-full{
   width: 100%;
@@ -598,12 +564,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[445px\]{
   width: 445px;
 }
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[170px\]{
+  width: 170px;
+}
+.w-\[270px\]{
+  width: 270px;
 }
 .w-\[86\%\]{
   width: 86%;
+}
+.w-\[327px\]{
+  width: 327px;
+}
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-\[150px\]{
   width: 150px;
@@ -638,8 +613,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center{
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
+.justify-around{
+  justify-content: space-around;
+}
 .justify-evenly{
   justify-content: space-evenly;
+}
+.self-center{
+  align-self: center;
 }
 .rounded-full{
   border-radius: 9999px;
@@ -671,8 +655,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-desktop-crew{
   background-image: url(/src/assets/crew/background-crew-desktop.jpg);
 }
-.bg-desktop-destination{
-  background-image: url(/src/assets/destination/background-destination-desktop.jpg);
+.bg-mobile-destination{
+  background-image: url(/src/assets/destination/background-destination-mobile.jpg);
 }
 .bg-mobile-home{
   background-image: url(/src/assets/home/background-home-mobile.jpg);
@@ -691,6 +675,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+.p-\[0\.7rem\]{
+  padding: 0.7rem;
+}
+.px-\[6px\]{
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .py-\[52px\]{
   padding-top: 52px;
@@ -730,16 +721,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
+.text-\[17px\]{
+  font-size: 17px;
 }
 .text-\[14px\]{
   font-size: 14px;
+}
+.text-\[56px\]{
+  font-size: 56px;
+}
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-\[16px\]{
   font-size: 16px;
@@ -753,18 +746,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[20px\]{
   font-size: 20px;
 }
-.text-\[56px\]{
-  font-size: 56px;
-}
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-thin{
-  font-weight: 100;
-}
 .font-extralight{
   font-weight: 200;
+}
+.font-thin{
+  font-weight: 100;
 }
 .font-bold{
   font-weight: 700;
@@ -775,17 +765,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-9{
   line-height: 2.25rem;
 }
-.leading-\[145px\]{
-  line-height: 145px;
+.leading-\[102px\]{
+  line-height: 102px;
 }
-.leading-8{
-  line-height: 2rem;
+.leading-\[1\.7rem\]{
+  line-height: 1.7rem;
 }
 .leading-\[17px\]{
   line-height: 17px;
 }
 .leading-loose{
   line-height: 2;
+}
+.leading-8{
+  line-height: 2rem;
 }
 .tracking-secondary{
   letter-spacing: 4.72px;
@@ -854,7 +847,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .section-title{
   font-family: Barlow Condensed;
-  font-size: 28px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -867,6 +859,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+.hover\:border-b-\[3px\]:hover{
+  border-bottom-width: 3px;
 }
 
 .hover\:border-b-gray-400:hover{
@@ -916,6 +912,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .md\:h-24{
+    height: 6rem;
+  }
+
   .md\:bg-tablet-home{
     background-image: url(/src/assets/home/background-home-tablet.jpg);
   }
@@ -923,12 +923,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1024px){
 
-  .lg\:top-5{
-    top: 1.25rem;
-  }
-
-  .lg\:left-\[4\.25rem\]{
-    left: 4.25rem;
+  .lg\:block{
+    display: block;
   }
 
   .lg\:flex{

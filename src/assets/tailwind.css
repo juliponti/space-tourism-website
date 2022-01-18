@@ -9,5 +9,5 @@
 }
 
 .section-title {
-  @apply text-[28px] text-white font-BarlowCo;
+  @apply text-white font-BarlowCo;
 }
