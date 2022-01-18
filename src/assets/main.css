@@ -397,23 +397,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .absolute{
   position: absolute;
 }
-.top-12{
-  top: 3rem;
+.top-4{
+  top: 1rem;
 }
 .right-0{
   right: 0px;
 }
-.top-5{
-  top: 1.25rem;
+.top-\[-10px\]{
+  top: -10px;
 }
-.left-\[4\.25rem\]{
-  left: 4.25rem;
+.left-\[17px\]{
+  left: 17px;
 }
 .top-0{
   top: 0px;
 }
 .-left-\[440px\]{
   left: -440px;
+}
+.top-12{
+  top: 3rem;
 }
 .left-\[166\.5px\]{
   left: 166.5px;
@@ -475,44 +478,44 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-\[343px\]{
   top: 343px;
 }
-.right-\[11rem\]{
-  right: 11rem;
+.left-\[832px\]{
+  left: 832px;
 }
-.bottom-\[35rem\]{
-  bottom: 35rem;
+.top-\[310px\]{
+  top: 310px;
 }
-.bottom-\[260px\]{
-  bottom: 260px;
+.bottom-\[-3rem\]{
+  bottom: -3rem;
 }
-.right-\[3\.6rem\]{
-  right: 3.6rem;
+.right-\[0\.3rem\]{
+  right: 0.3rem;
 }
-.bottom-\[13rem\]{
-  bottom: 13rem;
+.bottom-\[-9rem\]{
+  bottom: -9rem;
 }
-.bottom-\[6rem\]{
-  bottom: 6rem;
+.right-\[260px\]{
+  right: 260px;
 }
-.right-\[307px\]{
-  right: 307px;
+.right-\[50px\]{
+  right: 50px;
 }
-.right-\[80px\]{
-  right: 80px;
+.top-\[104px\]{
+  top: 104px;
 }
-.bottom-28{
-  bottom: 7rem;
+.left-\[109px\]{
+  left: 109px;
 }
-.left-\[1001px\]{
-  left: 1001px;
-}
-.top-\[495px\]{
-  top: 495px;
+.bottom-\[23px\]{
+  bottom: 23px;
 }
 .left-\[165px\]{
   left: 165px;
 }
 .top-\[383px\]{
   top: 383px;
+}
+.top-\[495px\]{
+  top: 495px;
 }
 .top-\[607px\]{
   top: 607px;
@@ -526,6 +529,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-10{
   z-index: 10;
 }
+.m-auto{
+  margin: auto;
+}
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -538,6 +544,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex{
   display: flex;
 }
+.hidden{
+  display: none;
+}
+.h-full{
+  height: 100%;
+}
 .h-24{
   height: 6rem;
 }
@@ -547,26 +559,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-0{
   height: 0px;
 }
-.h-full{
-  height: 100%;
-}
 .h-4{
   height: 1rem;
 }
 .h-\[445px\]{
   height: 445px;
 }
-.h-\[382px\]{
-  height: 382px;
-}
-.h-\[247px\]{
-  height: 247px;
+.h-\[150px\]{
+  height: 150px;
 }
 .h-20{
   height: 5rem;
 }
+.h-14{
+  height: 3.5rem;
+}
+.min-h-\[99vh\]{
+  min-height: 99vh;
+}
 .w-full{
   width: 100%;
+}
+.w-\[236px\]{
+  width: 236px;
 }
 .w-\[830px\]{
   width: 830px;
@@ -587,11 +602,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -moz-fit-content;
   width: fit-content;
 }
-.w-\[450px\]{
-  width: 450px;
+.w-\[86\%\]{
+  width: 86%;
 }
-.w-\[247px\]{
-  width: 247px;
+.w-\[150px\]{
+  width: 150px;
 }
 .w-20{
   width: 5rem;
@@ -610,6 +625,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex-col{
   flex-direction: column;
+}
+.items-start{
+  align-items: flex-start;
+}
+.items-end{
+  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -653,8 +674,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-desktop-destination{
   background-image: url(/src/assets/destination/background-destination-desktop.jpg);
 }
-.bg-desktop-home{
-  background-image: url('/src/assets/home/background-home-desktop.jpg');
+.bg-mobile-home{
+  background-image: url(/src/assets/home/background-home-mobile.jpg);
 }
 .bg-desktop-technology{
   background-image: url(/src/assets/technology/background-technology-desktop.jpg);
@@ -670,6 +691,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+.py-\[52px\]{
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-\[17px\]{
   padding-top: 17px;
@@ -712,11 +741,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[14px\]{
   font-size: 14px;
 }
-.text-\[150px\]{
-  font-size: 150px;
+.text-\[16px\]{
+  font-size: 16px;
 }
-.text-\[18px\]{
-  font-size: 18px;
+.text-\[80px\]{
+  font-size: 80px;
+}
+.text-\[15px\]{
+  font-size: 15px;
+}
+.text-\[20px\]{
+  font-size: 20px;
 }
 .text-\[56px\]{
   font-size: 56px;
@@ -752,22 +787,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-loose{
   line-height: 2;
 }
-.leading-\[36\2c 67px\]{
-  line-height: 36,67px;
-}
 .tracking-secondary{
   letter-spacing: 4.72px;
 }
 .tracking-primary{
   letter-spacing: 2.7px;
 }
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-details{
   --tw-text-opacity: 1;
   color: rgb(208 214 249 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-number{
   --tw-text-opacity: 1;
@@ -796,6 +828,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .outline-0{
   outline-width: 0px;
+}
+.backdrop-blur-3xl{
+  --tw-backdrop-blur: blur(64px);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
 }
 .backdrop-blur-lg{
   --tw-backdrop-blur: blur(16px);
@@ -837,8 +874,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-.hover\:outline-\[77px\]:hover{
-  outline-width: 77px;
+.hover\:outline-\[31px\]:hover{
+  outline-width: 31px;
 }
 
 .hover\:outline-\[\#ffffff4f\]:hover{
@@ -860,4 +897,45 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .active\:outline-\[\#ffffff27\]:active{
   outline-color: #ffffff27;
+}
+
+@media (min-width: 640px){
+
+  .sm\:hidden{
+    display: none;
+  }
+
+  .sm\:bg-mobile-home{
+    background-image: url(/src/assets/home/background-home-mobile.jpg);
+  }
+}
+
+@media (min-width: 768px){
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:bg-tablet-home{
+    background-image: url(/src/assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:top-5{
+    top: 1.25rem;
+  }
+
+  .lg\:left-\[4\.25rem\]{
+    left: 4.25rem;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:bg-desktop-home{
+    background-image: url('/src/assets/home/background-home-desktop.jpg');
+  }
 }

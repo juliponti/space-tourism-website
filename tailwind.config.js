@@ -23,6 +23,18 @@ module.exports = {
         "desktop-crew": "url(/src/assets/crew/background-crew-desktop.jpg)",
         "desktop-technology":
           "url(/src/assets/technology/background-technology-desktop.jpg)",
+        "tablet-home": "url(/src/assets/home/background-home-tablet.jpg)",
+        "tablet-destination":
+          "url(/src/assets/destination/background-destination-tablet.jpg)",
+        "tablet-crew": "url(/src/assets/crew/background-crew-tablet.jpg)",
+        "tablet-technology":
+          "url(/src/assets/technology/background-technology.jpg)",
+        "mobile-home": "url(/src/assets/home/background-home-mobile.jpg)",
+        "mobile-destination":
+          "url(/src/assets/destination/background-destination-mobile.jpg)",
+        "mobile-crew": "url(/src/assets/crew/background-crew-mobile.jpg)",
+        "mobile-technology":
+          "url(/src/assets/technology/background-technology-mobile.jpg",
       },
     },
   },

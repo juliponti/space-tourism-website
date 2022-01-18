@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/navbar.js";
 
 function Header() {
   return (
-    <header className=" h-24 w-full flex justify-center items-center absolute top-12 right-0 ">
+    <header className="absolute top-4 right-0 w-full">
       <Navbar />
     </header>
   );

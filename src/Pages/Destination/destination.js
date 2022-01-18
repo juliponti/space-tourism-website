@@ -14,13 +14,14 @@ export default function Destination() {
         <span className="section-title opacity-25 mr-3">01</span>PICK YOUR
         DESTINATION
       </h1>
-      <div>
-        <img
-          src={selectedPlanet.images.webp}
-          alt={selectedPlanet.name}
-          className="absolute left-56 top-[343px] h-[445px] w-[445px]"
-        />
-        <ul className="flex flex-row absolute right-[11rem] bottom-[35rem]">
+
+      <img
+        src={selectedPlanet.images.webp}
+        alt={selectedPlanet.name}
+        className="absolute left-56 top-[343px] h-[445px] w-[445px]"
+      />
+      <div className="absolute left-[832px] top-[310px]">
+        <ul className="flex flex-row ">
           {destinations.map((planet) => (
             <li
               className={`text-details font-BarlowCo mr-9 uppercase text-base tracking-primary cursor-pointer leading-9 ${
@@ -33,7 +34,7 @@ export default function Destination() {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col absolute bottom-[260px] right-[3.6rem]">
+        <div className="flex flex-col ">
           <h2 className="font-Belle text-8xl text-white uppercase leading-[145px]">
             {selectedPlanet.name}
           </h2>
@@ -41,9 +42,9 @@ export default function Destination() {
             {selectedPlanet.description}
           </p>
         </div>
-        <div className="border bg-white w-[444px] absolute bottom-[13rem] right-[3.6rem] opacity-10" />
+        <div className="border bg-white w-[444px] absolute bottom-[-3rem] right-[0.3rem] opacity-10" />
 
-        <div className=" absolute bottom-[6rem] right-[307px] leading-[17px] tracking-primary">
+        <div className=" absolute w-fit bottom-[-9rem] right-[260px] leading-[17px] tracking-primary">
           <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
             AVG. DISTANCE
           </h3>
@@ -51,7 +52,7 @@ export default function Destination() {
             {selectedPlanet.distance}
           </span>
         </div>
-        <div className=" absolute bottom-[6rem] right-[80px] leading-[17px] tracking-primary">
+        <div className=" absolute bottom-[-9rem] right-[50px] leading-[17px] tracking-primary">
           <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
             EST. TRAVEL TIME
           </h3>
