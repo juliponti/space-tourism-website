@@ -6,11 +6,11 @@ function NavLinks(props) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li>
+    <li className="h-14">
       <NavLink
         to={link}
         onClick={() => setIsActive(!isActive)}
-        className={`flex h-24 items-center no-underline text-white  hover:border-b-[3x] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer ${
+        className={`h-8 flex items-center no-underline text-white hover:border-b-[3x] hover:border-b-gray-400 hover:cursor-pointer active:border-b-[3px] active:border-b-white active:cursor-pointer md:h-24 ${
           isActive && "border-b-2 border-b-white"
         }`}
       >
