@@ -34,7 +34,7 @@ module.exports = {
           "url(/src/assets/destination/background-destination-mobile.jpg)",
         "mobile-crew": "url(/src/assets/crew/background-crew-mobile.jpg)",
         "mobile-technology":
-          "url(/src/assets/technology/background-technology-mobile.jpg",
+          "url(/src/assets/technology/background-technology-mobile.jpg)",
       },
     },
   },
