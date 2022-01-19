@@ -418,54 +418,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-52{
   top: 13rem;
 }
-.left-40{
-  left: 10rem;
-}
-.top-96{
-  top: 24rem;
-}
-.top-\[452px\]{
-  top: 452px;
-}
-.top-\[543px\]{
-  top: 543px;
-}
-.left-\[167px\]{
-  left: 167px;
-}
-.top-\[791px\]{
-  top: 791px;
-}
-.left-\[206px\]{
-  left: 206px;
-}
-.left-\[245px\]{
-  left: 245px;
-}
-.left-\[284px\]{
-  left: 284px;
-}
-.left-\[795px\]{
-  left: 795px;
-}
-.top-\[198px\]{
-  top: 198px;
-}
-.left-\[840px\]{
-  left: 840px;
-}
-.top-\[260px\]{
-  top: 260px;
-}
-.top-\[255px\]{
-  top: 255px;
-}
-.left-\[767px\]{
-  left: 767px;
-}
-.top-\[298px\]{
-  top: 298px;
-}
 .left-\[165px\]{
   left: 165px;
 }
@@ -490,19 +442,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto{
   margin: auto;
 }
-.my-0{
-  margin-top: 0px;
-  margin-bottom: 0px;
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .mr-3{
   margin-right: 0.75rem;
 }
+.mt-6{
+  margin-top: 1.5rem;
+}
 .mr-\[10px\]{
   margin-right: 10px;
+}
+.block{
+  display: block;
 }
 .flex{
   display: flex;
@@ -522,8 +488,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-0{
   height: 0px;
 }
-.h-4{
-  height: 1rem;
+.h-3{
+  height: 0.75rem;
 }
 .h-\[150px\]{
   height: 150px;
@@ -540,6 +506,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .min-h-\[99vh\]{
   min-height: 99vh;
 }
+.min-h-\[90vh\]{
+  min-height: 90vh;
+}
 .min-h-\[90\%\]{
   min-height: 90%;
 }
@@ -555,11 +524,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[473px\]{
   width: 473px;
 }
-.w-\[444px\]{
-  width: 444px;
+.w-\[187px\]{
+  width: 187px;
 }
-.w-4{
-  width: 1rem;
+.w-\[327px\]{
+  width: 327px;
+}
+.w-\[82px\]{
+  width: 82px;
+}
+.w-3{
+  width: 0.75rem;
 }
 .w-\[445px\]{
   width: 445px;
@@ -572,13 +547,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-\[86\%\]{
   width: 86%;
-}
-.w-\[327px\]{
-  width: 327px;
-}
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .w-\[150px\]{
   width: 150px;
@@ -609,6 +577,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-center{
   align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -652,8 +623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-desktop-crew{
-  background-image: url(/src/assets/crew/background-crew-desktop.jpg);
+.bg-mobile-crew{
+  background-image: url(/src/assets/crew/background-crew-mobile.jpg);
 }
 .bg-mobile-destination{
   background-image: url(/src/assets/destination/background-destination-mobile.jpg);
@@ -691,6 +662,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .py-\[17px\]{
   padding-top: 17px;
   padding-bottom: 17px;
@@ -707,19 +682,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-BarlowCo{
   font-family: Barlow Condensed;
 }
-.text-\[28px\]{
-  font-size: 28px;
+.text-\[16px\]{
+  font-size: 16px;
 }
-.text-\[32px\]{
-  font-size: 32px;
+.text-\[19px\]{
+  font-size: 19px;
 }
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-\[30px\]{
+  font-size: 30px;
 }
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-\[17px\]{
   font-size: 17px;
@@ -730,12 +704,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[56px\]{
   font-size: 56px;
 }
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-\[16px\]{
-  font-size: 16px;
+.text-\[28px\]{
+  font-size: 28px;
 }
 .text-\[80px\]{
   font-size: 80px;
@@ -745,6 +715,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[20px\]{
   font-size: 20px;
+}
+.text-\[32px\]{
+  font-size: 32px;
 }
 .text-xl{
   font-size: 1.25rem;
@@ -804,8 +777,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .opacity-25{
   opacity: 0.25;
 }
-.opacity-50{
-  opacity: 0.5;
+.opacity-10{
+  opacity: 0.1;
 }
 .opacity-\[0\.17\]{
   opacity: 0.17;
@@ -813,8 +786,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .opacity-100{
   opacity: 1;
 }
-.opacity-10{
-  opacity: 0.1;
+.opacity-50{
+  opacity: 0.5;
 }
 .outline{
   outline-style: solid;
@@ -931,7 +904,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
+  .lg\:bg-desktop-crew{
+    background-image: url(/src/assets/crew/background-crew-desktop.jpg);
+  }
+
   .lg\:bg-desktop-home{
     background-image: url('/src/assets/home/background-home-desktop.jpg');
+  }
+
+  .lg\:text-\[28px\]{
+    font-size: 28px;
+  }
+
+  .lg\:text-\[32px\]{
+    font-size: 32px;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

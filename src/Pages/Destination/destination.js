@@ -53,8 +53,8 @@ export default function Destination() {
           </div>
         </div>
         <div className="border bg-white w-[327px] opacity-10" />
-        <div className=" w-fit leading-[17px] tracking-primary">
-          <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
+        <div className="leading-[17px] tracking-primary">
+          <h3 className="text-details tracking-primary text-center text-[14px] font-BarlowCo">
             AVG. DISTANCE
           </h3>
           <span className="font-Belle text-[28px] text-white leading-loose uppercase">
@@ -62,7 +62,7 @@ export default function Destination() {
           </span>
         </div>
         <div className="leading-[17px] tracking-primary">
-          <h3 className="text-details tracking-primary w-fit text-[14px] font-BarlowCo">
+          <h3 className="text-details tracking-primary text-center text-[14px] font-BarlowCo">
             EST. TRAVEL TIME
           </h3>
           <span className="font-Belle text-[28px] text-white leading-loose uppercase">
