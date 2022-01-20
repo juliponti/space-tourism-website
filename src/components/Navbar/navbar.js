@@ -4,11 +4,11 @@ import MobileNavigation from "./mobilenavigation.js";
 
 function Navbar() {
   return (
-    <>
+    <div className="md:w-full md:flex md:justify-between md:p-2">
       <img src={NavIcon} className="" alt="star logo" />
       <Navigation />
       <MobileNavigation />
-    </>
+    </div>
   );
 }
 

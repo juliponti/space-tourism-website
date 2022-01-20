@@ -6,7 +6,7 @@ function NavLinks(props) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li className="h-14">
+    <li className="h-14 md:h-fit">
       <NavLink
         to={link}
         onClick={() => setIsActive(!isActive)}
@@ -14,8 +14,10 @@ function NavLinks(props) {
           isActive && "border-b-2 border-b-white"
         }`}
       >
-        <span className="nav-font-style mr-[10px] font-bold">{number}</span>
-        <span className="nav-font-style">{title}</span>
+        <span className="nav-font-style mr-[10px] font-bold md:hidden">
+          {number}
+        </span>
+        <span className="nav-font-style md:text-sm">{title}</span>
       </NavLink>
     </li>
   );
