@@ -21,30 +21,16 @@ export default function Technology() {
           alt={selectedTech.name}
         />
         <div className="flex w-[137px] justify-between my-3">
-          <div
-            className={`w-10 h-10 rounded-full border border-gray-100/50 text-white text-base text-center font-Belle py-2 cursor-pointer lg:text-[32px] lg:w-20 lg:h-20 lg:py-[17px] ${
-              selectedTech === technology[0] && "text-number bg-white"
-            }`}
-            onClick={() => setSelectedTech(technology[0])}
-          >
-            1
-          </div>
-          <div
-            className={`w-10 h-10 rounded-full border border-gray-100/50 text-white text-base text-center font-Belle py-2 cursor-pointer lg:text-[32px] lg:w-20 lg:h-20 lg:py-[17px] ${
-              selectedTech === technology[1] && "text-number bg-white"
-            }`}
-            onClick={() => setSelectedTech(technology[1])}
-          >
-            2
-          </div>
-          <div
-            className={`w-10 h-10 rounded-full border border-gray-100/50 text-white text-base text-center font-Belle py-2 cursor-pointer lg:text-[32px] lg:w-20 lg:h-20 lg:py-[17px] ${
-              selectedTech === technology[2] && "text-number bg-white"
-            }`}
-            onClick={() => setSelectedTech(technology[2])}
-          >
-            3
-          </div>
+          {technology.map((item) => (
+            <div
+              className={`w-10 h-10 rounded-full border border-gray-100/50 text-white text-base text-center font-Belle py-2 cursor-pointer lg:text-[32px] lg:w-20 lg:h-20 lg:py-[17px] ${
+                selectedTech === item && "text-number bg-white"
+              }`}
+              onClick={() => setSelectedTech(item)}
+            >
+              {item.number}
+            </div>
+          ))}
         </div>
 
         <div className="flex flex-col items-center justify-center mb-7 mt-4">

@@ -24,30 +24,14 @@ export default function Crew() {
 
         <div className="border bg-white w-[327px] opacity-10" />
         <div className="flex justify-between w-[82px] my-5 cursor-pointer">
-          <div
-            className={`w-3 h-3 rounded-full opacity-[0.17] bg-white ${
-              selectedCrew === crew[0] && "opacity-100"
-            }`}
-            onClick={() => setSelectedCrew(crew[0])}
-          />
-          <div
-            className={`w-3 h-3 rounded-full opacity-[0.17] bg-white ${
-              selectedCrew === crew[1] && "opacity-100"
-            }`}
-            onClick={() => setSelectedCrew(crew[1])}
-          />
-          <div
-            className={`w-3 h-3 rounded-full opacity-[0.17] bg-white ${
-              selectedCrew === crew[2] && "opacity-100"
-            }`}
-            onClick={() => setSelectedCrew(crew[2])}
-          />
-          <div
-            className={`w-3 h-3 rounded-full opacity-[0.17] bg-white ${
-              selectedCrew === crew[3] && "opacity-100"
-            }`}
-            onClick={() => setSelectedCrew(crew[3])}
-          />
+          {crew.map((item) => (
+            <div
+              className={`w-3 h-3 rounded-full opacity-[0.17] bg-white ${
+                selectedCrew === item && "opacity-100"
+              }`}
+              onClick={() => setSelectedCrew(item)}
+            />
+          ))}
         </div>
 
         <div className="text-center">
