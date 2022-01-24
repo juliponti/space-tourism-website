@@ -48,7 +48,7 @@ export default function Crew() {
             </p>
           </div>
         </div>
-        <div className="md:flex md:items-end xl:w-2/5 xl:flex xl:items-end xl:h-[678px]">
+        <div className="md:flex md:items-end xl:w-2/5 xl:flex xl:items-end xl:min-h-[678px]">
           <img
             className="hidden md:block xl:m-auto"
             src={selectedCrew.images.webp}

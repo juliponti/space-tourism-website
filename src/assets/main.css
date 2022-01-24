@@ -1169,8 +1169,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2.5rem;
   }
 
+  .xl\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .xl\:my-2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .xl\:ml-\[134px\]{
     margin-left: 134px;
+  }
+
+  .xl\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .xl\:ml-\[154px\]{
+    margin-left: 154px;
+  }
+
+  .xl\:mr-\[90px\]{
+    margin-right: 90px;
   }
 
   .xl\:block{
@@ -1179,6 +1201,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:flex{
     display: flex;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:h-36{
+    height: 9rem;
   }
 
   .xl\:h-10{
@@ -1198,16 +1228,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 1rem;
   }
 
-  .xl\:h-\[678px\]{
-    height: 678px;
-  }
-
   .xl\:h-full{
     height: 100%;
   }
 
   .xl\:h-20{
     height: 5rem;
+  }
+
+  .xl\:min-h-\[678px\]{
+    min-height: 678px;
   }
 
   .xl\:min-h-\[67\%\]{
@@ -1258,12 +1288,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 445px;
   }
 
+  .xl\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .xl\:w-20{
     width: 5rem;
   }
 
+  .xl\:w-full{
+    width: 100%;
+  }
+
+  .xl\:w-\[439px\]{
+    width: 439px;
+  }
+
   .xl\:flex-row{
     flex-direction: row;
+  }
+
+  .xl\:flex-col{
+    flex-direction: column;
   }
 
   .xl\:items-start{
@@ -1306,14 +1353,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 2rem;
   }
 
+  .xl\:p-0{
+    padding: 0px;
+  }
+
   .xl\:px-1{
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
 
-  .xl\:py-\[17px\]{
-    padding-top: 17px;
-    padding-bottom: 17px;
+  .xl\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:pr-0{
+    padding-right: 0px;
   }
 
   .xl\:pl-\[139px\]{
@@ -1343,12 +1403,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
-  .xl\:text-\[28px\]{
-    font-size: 28px;
-  }
-
   .xl\:text-\[56px\]{
     font-size: 56px;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .xl\:text-base{

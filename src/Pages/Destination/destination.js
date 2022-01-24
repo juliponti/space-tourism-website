@@ -16,7 +16,7 @@ export default function Destination() {
         </h1>
       </div>
       <div className="flex flex-col justify-around items-center min-h-[81%] md:min-h-[77%] xl:flex-row xl:items-center xl:justify-between xl:min-h-[67%]">
-        <div className="my-7 xl:flex xl:items-center xl:justify-center xl:w-1/2 xl:h-full">
+        <div className="my-7 xl:flex xl:items-center xl:justify-center xl:w-1/2 xl:h-full xl:m-0 xl:py-5 ">
           <img
             src={selectedPlanet.images.webp}
             alt={selectedPlanet.name}

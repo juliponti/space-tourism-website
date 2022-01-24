@@ -4,7 +4,7 @@ import MobileNavigation from "./mobilenavigation.js";
 
 function Navbar() {
   return (
-    <div className="w-full flex justify-between p-2 xl:p-8 md:items-center">
+    <div className="w-full flex justify-between p-2 xl:p-8 md:items-center xl:pr-0">
       <img
         src={NavIcon}
         className="md:w-12 md:h-12 xl:w-10 xl:h-10"
