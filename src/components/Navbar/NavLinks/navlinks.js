@@ -14,10 +14,10 @@ function NavLinks(props) {
           isActive && "border-b-2 border-b-white"
         }`}
       >
-        <span className="nav-font-style mr-[10px] font-bold md:hidden lg:block">
+        <span className="nav-font-style mr-[10px] font-bold md:hidden xl:block xl:text-base">
           {number}
         </span>
-        <span className="nav-font-style md:text-sm">{title}</span>
+        <span className="nav-font-style md:text-sm xl:text-base">{title}</span>
       </NavLink>
     </li>
   );
