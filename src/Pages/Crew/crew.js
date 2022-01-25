@@ -24,7 +24,7 @@ export default function Crew() {
         />
 
         <div className="border bg-white w-[327px] opacity-10 md:hidden" />
-        <div className="md:flex md:flex-col-reverse md:items-center xl:w-[623px] xl:h-[476px] xl:flex xl:justify-between xl:items-start">
+        <div className="md:flex md:flex-col-reverse md:items-center xl:w-[623px] xl:h-[476px] xl:flex xl:justify-between xl:items-start xl:mb-24">
           <div className="flex justify-between w-[82px] my-5 mx-auto cursor-pointer xl:w-[130px] xl:mx-16 ">
             {crew.map((item) => (
               <div

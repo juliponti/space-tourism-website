@@ -18,7 +18,7 @@ export default function Technology() {
           SPACE LAUNCH 101
         </h1>
       </div>
-      <div className="flex flex-col justify-start items-center min-h-[71vh] md:w-full xl:justify-between xl:h-fit xl:flex-row">
+      <div className="flex flex-col justify-start items-center min-h-[71vh] md:w-full xl:justify-between xl:h-fit xl:flex-row 2xl:justify-evenly">
         <img
           className="my-5 xl:hidden"
           src={selectedTech.images.landscape}
@@ -37,7 +37,7 @@ export default function Technology() {
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-center mb-7 mt-4 xl:w-full xl:items-start">
+        <div className="flex flex-col items-center justify-center mb-7 mt-4 xl:w-full xl:items-start 2xl:max-w-[500px]">
           <span className="font-BarlowCo text-sm text-white font-extralight tracking-primary mt-2 uppercase md:text-base xl:my-2">
             the terminology...
           </span>

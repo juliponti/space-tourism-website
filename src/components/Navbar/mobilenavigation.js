@@ -17,28 +17,28 @@ function MobileNavigation() {
       {open && (
         <ol className="flex flex-col justify-evenly items-start w-full h-full py-[52px] px-6 ">
           <NavLinks
-            link="/"
+            link="/space-tourism-website"
             number="00"
             title="HOME"
             isMobile={true}
             closeMobileMenu={closeMobileMenu}
           />
           <NavLinks
-            link="/destination"
+            link="/space-tourism-website/destination"
             number="01"
             title="DESTINATION"
             isMobile={true}
             closeMobileMenu={closeMobileMenu}
           />
           <NavLinks
-            link="/crew"
+            link="/space-tourism-website/crew"
             number="02"
             title="CREW"
             isMobile={true}
             closeMobileMenu={closeMobileMenu}
           />
           <NavLinks
-            link="/technology"
+            link="/space-tourism-website/technology"
             number="03"
             title="TECHNOLOGY"
             isMobile={true}
