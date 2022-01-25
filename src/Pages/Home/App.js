@@ -22,7 +22,7 @@ function App() {
         </div>
         <div className="flex">
           <Link
-            to="/destination"
+            to="/space-tourism-website/destination"
             className="w-[150px] h-[150px] bg-white rounded-full my-0 mx-auto outline outline-0 transition-all hover:outline-[31px] hover:outline-[#ffffff4f] hover:scale-110 active:outline-[#ffffff27] md:w-[242px] md:h-[242px] md:hover:outline-[57px]"
           >
             <span className="font-Belle text-xl h-[150px] flex justify-center items-center md:text-3xl md:h-[241px]">
