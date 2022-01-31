@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://juliponti.github.io/space-tourism-website/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-i4-K6w43z](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-i4-K6w43z)
+- Live Site URL: [https://juliponti.github.io/space-tourism-website/](https://juliponti.github.io/space-tourism-website/)
 
 ## My process
 
