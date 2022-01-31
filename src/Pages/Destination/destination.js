@@ -7,76 +7,81 @@ const { destinations } = data;
 export default function Destination() {
   const [selectedPlanet, setSelectedPlanet] = useState(destinations[0]);
   return (
-    <div className="h-full bg-black bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination xl:bg-desktop-destination">
+    <div className="h-full bg-black bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination lg:bg-desktop-destination">
       <Header />
-      <div className="flex justify-center w-full my-4 md:justify-start xl:pl-[139px]">
-        <h1 className="section-title text-base tracking-secondary md:px-6 md:text-xl">
-          <span className="section-title opacity-25 mr-3 md:text-xl">01</span>
-          PICK YOUR DESTINATION
-        </h1>
-      </div>
-      <div className="flex flex-col justify-around items-center min-h-[81%] md:min-h-[77%] xl:flex-row xl:items-center xl:justify-between xl:min-h-[67%]">
-        <div className="my-7 xl:flex xl:justify-center xl:items-center xl:w-1/2 xl:h-full xl:m-0 xl:py-5 ">
-          <img
-            src={selectedPlanet.images.webp}
-            alt={selectedPlanet.name}
-            className="w-[445px] hidden md:block md:w-[300px] xl:block xl:w-[445px]"
-          />
-          <img
-            src={selectedPlanet.images.png}
-            alt={selectedPlanet.name}
-            className="w-[170px] md:hidden"
-          />
+      <main className="min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-144px)]">
+        <div className="flex justify-center w-full pt-6 md:pt-10 md:justify-start lg:pl-[139px] lg:pt-[76px]">
+          <h1 className="section-title text-base tracking-secondary md:px-6 md:text-lg lg:text-3lg">
+            <span className="section-title opacity-25 mr-3 md:text-lg lg:text-3lg">
+              01
+            </span>
+            PICK YOUR DESTINATION
+          </h1>
         </div>
-
-        <div className="xl:w-1/2">
-          <div className="flex flex-col items-center w-full">
-            <ul className="flex flex-row justify-between w-[270px]">
-              {destinations.map((planet) => (
-                <li
-                  className={`section-title text-sm uppercase tracking-primary leading-9 cursor-pointer md:text-base ${
-                    selectedPlanet.name === planet.name &&
-                    "border-b border-b-white"
-                  } `}
-                  onClick={() => setSelectedPlanet(planet)}
-                  key={planet.name}
-                >
-                  {planet.name}
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col">
-              <h2 className="font-Belle text-[56px] text-white leading-[102px] uppercase self-center md:text-[80px] md:my-6">
-                {selectedPlanet.name}
-              </h2>
-              <p className="font-Barlow text-base text-details text-center leading-6 self-center w-[86%]  md:w-[72%] md:font-thin md:leading-[1.7rem]">
-                {selectedPlanet.description}
-              </p>
+        <div className="flex flex-col justify-around items-center mt-8 px-6 md:mt-16 lg:flex-row lg:items-center lg:justify-between lg:max-w-[1300px] lg:mt-16 lg:mx-auto lg:px-24">
+          <div className="w-full md:w-fit lg:flex lg:justify-center lg:items-center lg:max-w-[445px] lg:w-[calc(100%-530px)] lg:ml-16 lg:pt-8 ">
+            <div className="md:w-[445px] md:h-[445px]">
+              <img
+                src={selectedPlanet.images.webp}
+                alt={selectedPlanet.name}
+                className="w-[445px] hidden md:block md:w-[300px] md:mx-auto lg:flex
+                 lg:max-w-full lg:w-full"
+              />
             </div>
+            <img
+              src={selectedPlanet.images.png}
+              alt={selectedPlanet.name}
+              className="w-[170px] mx-auto md:hidden"
+            />
           </div>
 
-          <div className="border bg-white w-[327px] opacity-10 my-7 mx-auto md:w-[573px]" />
-
-          <div className="flex flex-col justify-between items-center w-full md:flex-row md:w-3/5 md:mx-auto">
-            <div className="leading-4 tracking-primary my-1">
-              <h3 className="font-BarlowCo text-sm text-details tracking-primary text-center">
-                AVG. DISTANCE
-              </h3>
-              <span className="font-Belle text-3xl text-white leading-loose uppercase">
-                {selectedPlanet.distance}
-              </span>
+          <div className="mt-5 mx-auto max-w-lg text-center md:mt-12 lg:m-0 lg:w-[445px] lg:text-start">
+            <div className="flex flex-col items-center w-full lg:items-start">
+              <ul className="flex flex-row justify-between w-[270px] lg:mb-8">
+                {destinations.map((planet) => (
+                  <li
+                    className={`font-BarlowCo text-sm text-details uppercase tracking-primary leading-9 cursor-pointer md:text-base lg:h-8 ${
+                      selectedPlanet.name === planet.name &&
+                      "border-b-2 border-b-white text-white"
+                    } `}
+                    onClick={() => setSelectedPlanet(planet)}
+                    key={planet.name}
+                  >
+                    {planet.name}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col">
+                <h2 className="font-Belle text-[56px] text-white leading-[102px] uppercase self-center md:text-[80px] md:my-6 lg:self-start">
+                  {selectedPlanet.name}
+                </h2>
+                <p className="font-Barlow text-base text-details leading-6 w-[86%]  md:w-full md:leading-[1.7rem] lg:w-full lg:text-lg lg:text-left">
+                  {selectedPlanet.description}
+                </p>
+              </div>
             </div>
-            <div className="leading-[17px] tracking-primary m-1">
-              <h3 className="font-BarlowCo text-sm text-details tracking-primary text-center">
-                EST. TRAVEL TIME
-              </h3>
-              <span className="font-Belle text-3xl text-white leading-loose uppercase">
-                {selectedPlanet.travel}
-              </span>
+
+            <div className="flex flex-col justify-between items-center w-full mt-8 pt-8 border-t border-line md:flex-row md:mt-14 md:pt-7 md:mx-auto">
+              <div className="leading-4 tracking-primary w-full max-w mb-8 md:m-0">
+                <h3 className="font-BarlowCo text-sm text-details tracking-primary">
+                  AVG. DISTANCE
+                </h3>
+                <span className="font-Belle text-3lg text-white leading-loose uppercase">
+                  {selectedPlanet.distance}
+                </span>
+              </div>
+              <div className="leading-[17px] tracking-primary w-full">
+                <h3 className="font-BarlowCo text-sm text-details tracking-primary">
+                  EST. TRAVEL TIME
+                </h3>
+                <span className="font-Belle text-3lg text-white leading-loose uppercase">
+                  {selectedPlanet.travel}
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function MobileNavigation() {
 
   return (
     <nav
-      className={`fixed right-0 text-details flex flex-col items-end backdrop-blur-3xl px-[6px] z-10 md:hidden ${
+      className={`fixed right-0 text-details flex flex-col items-end backdrop-blur-3lg px-[6px] z-10 md:hidden ${
         open && "w-[236px] min-h-[99vh]"
       }`}
     >

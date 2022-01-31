@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks/navlinks";
 
 function Navigation() {
   return (
-    <nav className="bg-[#ffffff08] backdrop-blur-xl h-24 hidden sm:hidden md:flex md:w-[28rem] xl:flex xl:w-[830px] xl:flex-row">
+    <nav className="bg-[#ffffff08] backdrop-blur-lg h-24 hidden sm:hidden md:flex md:w-[28rem] lg:flex lg:w-[830px] lg:flex-row">
       <ol className="flex justify-evenly items-center w-full h-full">
         <NavLinks link="/space-tourism-website/" number="00" title="HOME" />
         <NavLinks

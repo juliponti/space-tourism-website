@@ -6,6 +6,7 @@ module.exports = {
         primary: "#0b0d17",
         details: "#d0d6f9",
         number: "#0B0D17",
+        line: "#383b4b",
       },
       fontFamily: {
         BarlowCo: "Barlow Condensed",
