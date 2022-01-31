@@ -8,7 +8,7 @@ export default function Technology() {
   const [selectedTech, setSelectedTech] = useState(technology[0]);
 
   return (
-    <div className="h-full bg-cover bg-fixed bg-center bg-no-repeat bg-mobile-technology xl:bg-desktop-technology">
+    <div className="h-full bg-black bg-cover bg-fixed bg-center bg-no-repeat bg-mobile-technology xl:bg-desktop-technology">
       <Header />
       <div className="flex justify-center w-full my-4 md:justify-start">
         <h1 className="section-title text-base text-center tracking-secondary w-full my-5 mx-auto md:mx-0 md:w-fit md:my-10 md:px-6 md:text-xl xl:text-3xl xl:my-1 xl:ml-[134px]">

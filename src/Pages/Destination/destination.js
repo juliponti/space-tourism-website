@@ -7,7 +7,7 @@ const { destinations } = data;
 export default function Destination() {
   const [selectedPlanet, setSelectedPlanet] = useState(destinations[0]);
   return (
-    <div className="h-full bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination xl:bg-desktop-destination">
+    <div className="h-full bg-black bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination xl:bg-desktop-destination">
       <Header />
       <div className="flex justify-center w-full my-4 md:justify-start xl:pl-[139px]">
         <h1 className="section-title text-base tracking-secondary md:px-6 md:text-xl">
