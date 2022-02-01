@@ -10,52 +10,58 @@ export default function Crew() {
   return (
     <div className="h-full bg-black bg-cover bg-fixed bg-center bg-no-repeat bg-mobile-crew lg:bg-desktop-crew overflow-hidden">
       <Header />
-      <div className="flex justify-center w-full my-4 md:justify-start">
-        <h1 className="section-title text-base my-3 mx-auto tracking-secondary md:my-10 md:mx-0 md:px-6 md:text-lg lg:text-3lg lg:my-1 lg:ml-[134px] ">
-          <span className="section-title opacity-25 mr-3">02</span>MEET YOUR
-          CREW
-        </h1>
-      </div>
-      <div className="flex flex-col justify-start items-center min-h-[90vh] md:h-full md:min-h-0 lg:flex-row lg:h-fit lg:justify-center">
-        <img
-          className="block w-[187px] mt-6 md:hidden"
-          src={selectedCrew.images.png}
-          alt={selectedCrew.name}
-        />
-
-        <div className="border bg-white w-[327px] opacity-10 md:hidden" />
-        <div className="md:flex md:flex-col-reverse md:items-center lg:w-[623px] lg:h-[476px] lg:flex lg:justify-between lg:items-start lg:mb-24">
-          <div className="flex justify-between w-[82px] my-5 mx-auto cursor-pointer lg:w-[130px] lg:mx-16 ">
-            {crew.map((item) => (
-              <div
-                className={`w-3 h-3 rounded-full bg-white opacity-[0.17] lg:w-4 lg:h-4 ${
-                  selectedCrew === item && "opacity-100"
-                }`}
-                onClick={() => setSelectedCrew(item)}
-              />
-            ))}
-          </div>
-
-          <div className="text-center md:flex md:flex-col md:items-center lg:text-left lg:items-start">
-            <span className="font-Belle text-lg text-white uppercase opacity-50 lg:text-3lg lg:px-1 lg:mx-12">
-              {selectedCrew.role}
-            </span>
-            <h2 className="font-Belle text-white text-3lg my-3 mx-auto uppercase lg:text-6lg lg:my-5 lg:mx-12">
-              {selectedCrew.name}
-            </h2>
-            <p className="font-Barlow text-base text-details px-5 my-5 w-full md:w-[65%] lg:text-lg lg:w-[541px] lg:font-thin lg:mx-10 lg:leading-8">
-              {selectedCrew.bio}
-            </p>
+      <main className="md:min-h-[calc(100vh-144px)]">
+        <div className="pt-6 text-center md:pt-10 md:text-left lg:pt-[74px]">
+          <div className="mx-auto px-6 lg:max-w-[1300px] lg:px-24">
+            <h1 className="section-title text-base tracking-secondary md:text-lg lg:text-3xl">
+              <span className="section-title opacity-25 mr-3">02</span>MEET YOUR
+              CREW
+            </h1>
           </div>
         </div>
-        <div className="md:flex md:items-end lg:w-2/5 lg:flex lg:items-end lg:min-h-[678px]">
+
+        <div className="flex flex-col justify-start items-center min-h-[90vh] md:h-full md:min-h-0 md:mt-14 lg:mt-40 lg:max-w-[1300px] lg:px-24 lg:mx-auto lg:justify-between lg:flex-row lg:h-fit">
           <img
-            className="hidden md:block lg:m-auto"
-            src={selectedCrew.images.webp}
+            className="block w-[187px] mt-6 md:hidden"
+            src={selectedCrew.images.png}
             alt={selectedCrew.name}
           />
+
+          <div className="border bg-white w-[327px] opacity-10 md:hidden" />
+
+          <div className="md:flex md:flex-col-reverse md:items-center lg:flex lg:items-start">
+            <div className="flex justify-between w-20 my-5 mx-auto cursor-pointer md:w-36 md:mt-10 lg:justify-start lg:w-full lg:mt-[120px] lg:mb-0 ">
+              {crew.map((item) => (
+                <div
+                  className={`w-3 h-3 rounded-full bg-white opacity-[0.17] md:w-4 md:h-4 lg:w-4 lg:h-4 lg:mr-6 ${
+                    selectedCrew === item && "opacity-100"
+                  }`}
+                  onClick={() => setSelectedCrew(item)}
+                />
+              ))}
+            </div>
+
+            <div className="text-center md:flex md:flex-col md:items-center lg:text-left lg:items-start">
+              <span className="font-Belle text-lg text-white uppercase opacity-50 md:text-2xl md:mb-2 lg:text-3xl lg:mb-4">
+                {selectedCrew.role}
+              </span>
+              <h2 className="font-Belle text-white text-3xl my-3 mx-auto uppercase md:text-[40px] md:mb-4 lg:text-6xl lg:mb-7">
+                {selectedCrew.name}
+              </h2>
+              <p className="font-Barlow text-base text-details px-5 my-5 w-full md:my-0 md:max-w-[458px] md:leading-[1.778] md:px-0 lg:text-lg lg:max-w-[445px] lg:leading-8">
+                {selectedCrew.bio}
+              </p>
+            </div>
+          </div>
+          <div className="md:flex md:items-end md:mt-10 md:mx-auto lg:m-0 lg:block lg:absolute lg:right-[calc(50%-550px)] lg:bottom-0 lg:items-end">
+            <img
+              className="hidden md:block md:max-h-[530px] lg:max-h-full"
+              src={selectedCrew.images.webp}
+              alt={selectedCrew.name}
+            />
+          </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
