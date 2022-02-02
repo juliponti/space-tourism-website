@@ -8,7 +8,7 @@ export default function Crew() {
   const [selectedCrew, setSelectedCrew] = useState(crew[0]);
 
   return (
-    <div className="h-full bg-black bg-cover bg-fixed bg-center bg-no-repeat bg-mobile-crew lg:bg-desktop-crew overflow-hidden">
+    <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-crew lg:bg-desktop-crew overflow-hidden">
       <Header />
       <main className="md:min-h-[calc(100vh-144px)]">
         <div className="pt-6 text-center md:pt-10 md:text-left lg:pt-[74px]">

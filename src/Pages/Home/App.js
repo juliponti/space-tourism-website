@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="h-full bg-black bg-cover bg-center bg-no-repeat bg-mobile-home sm:bg-mobile-home md:bg-tablet-home lg:bg-desktop-home">
+    <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-home sm:bg-mobile-home md:bg-tablet-home lg:bg-desktop-home">
       <Header />
       <main className="pt-12 min-h-[calc(100vh-64px)] md:pt-[105px] md:min-h-[calc(100vh-96px)] lg:pt-[250px] lg:min-h-[calc(100vh--100px)]">
         <div className="flex flex-col justify-evenly items-center mx-auto px-6 lg:flex-row lg:justify-between lg:items-end lg:px-24 lg:max-w-[1300px]">
