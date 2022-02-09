@@ -11,7 +11,7 @@ export default function Technology() {
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-technology lg:bg-desktop-technology">
       <Header />
 
-      <main className="min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-136px)]">
+      <main className="min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-144px)]">
         <div className="pt-6 md:pt-10 lg:pt-20">
           <div className="mx-auto px-6 lg:max-w-[1300px] lg:px-24">
             <h1 className="section-title text-base text-center tracking-primary w-full md:mx-0 md:w-fit md:px-6 md:text-[20px] lg:text-3xl lg:text-left lg:w-full lg:p-0 lg:tracking-secondary ">
@@ -37,6 +37,7 @@ export default function Technology() {
                       selectedTech === item && "text-number bg-white"
                     }`}
                     onClick={() => setSelectedTech(item)}
+                    key={item.name}
                   >
                     {item.number}
                   </div>

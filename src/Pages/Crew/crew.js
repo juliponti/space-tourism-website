@@ -37,6 +37,7 @@ export default function Crew() {
                     selectedCrew === item && "opacity-100"
                   }`}
                   onClick={() => setSelectedCrew(item)}
+                  key={item.name}
                 />
               ))}
             </div>
