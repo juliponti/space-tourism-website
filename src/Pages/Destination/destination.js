@@ -1,11 +1,13 @@
 import Header from "../../components/Header/header";
 import { useState } from "react";
 import { data } from "../../data";
+import { CSSTransition } from "react-transition-group";
 
 const { destinations } = data;
 
 export default function Destination() {
   const [selectedPlanet, setSelectedPlanet] = useState(destinations[0]);
+  const [inProp, setInProp] = useState(false);
   return (
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination lg:bg-desktop-destination">
       <Header />
@@ -21,21 +23,26 @@ export default function Destination() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-around items-center mt-8 px-6 md:mt-16 lg:flex-row lg:items-center lg:justify-between lg:max-w-[1300px] lg:mt-16 lg:mx-auto lg:px-24">
+        <div className="animate-fade flex flex-col justify-around items-center mt-8 px-6 md:mt-16 lg:flex-row lg:items-center lg:justify-between lg:max-w-[1300px] lg:mt-16 lg:mx-auto lg:px-24">
           <div className="w-full lg:flex lg:justify-center lg:items-center lg:max-w-[445px] lg:w-[calc(100%-530px)] lg:ml-16 lg:pt-8 ">
             <div className="md:mx-auto md:h-fit md:w-[445px]">
-              <img
-                src={selectedPlanet.images.webp}
-                alt={selectedPlanet.name}
-                className="w-[445px] hidden md:block md:w-[300px] md:mx-auto lg:flex
+              <CSSTransition in={inProp} timeout={200}>
+                <img
+                  src={selectedPlanet.images.webp}
+                  alt={selectedPlanet.name}
+                  className="w-[445px] hidden md:block md:w-[300px] md:mx-auto lg:flex
                  lg:max-w-full lg:w-full"
-              />
+                />
+              </CSSTransition>
             </div>
-            <img
-              src={selectedPlanet.images.png}
-              alt={selectedPlanet.name}
-              className="w-[170px] mx-auto md:hidden"
-            />
+
+            <CSSTransition in={inProp} timeout={200} className="fade">
+              <img
+                src={selectedPlanet.images.png}
+                alt={selectedPlanet.name}
+                className="w-[170px] mx-auto md:hidden"
+              />
+            </CSSTransition>
           </div>
 
           <div className="mt-5 mx-auto max-w-lg text-center md:mt-12 lg:m-0 lg:w-[445px] lg:text-start">
@@ -47,7 +54,7 @@ export default function Destination() {
                       selectedPlanet.name === planet.name &&
                       "border-b-2 border-b-white text-white"
                     } `}
-                    onClick={() => setSelectedPlanet(planet)}
+                    onClick={(() => setSelectedPlanet(planet), setInProp(true))}
                     key={planet.name}
                   >
                     {planet.name}
