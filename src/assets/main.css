@@ -468,11 +468,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
-.h-full{
-  height: 100%;
+.h-0{
+  height: 0px;
 }
 .h-24{
   height: 6rem;
+}
+.h-full{
+  height: 100%;
 }
 .h-3{
   height: 0.75rem;
@@ -500,6 +503,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-full{
   width: 100%;
+}
+.w-0{
+  width: 0px;
 }
 .w-\[236px\]{
   width: 236px;
@@ -542,9 +548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .max-w-\[444px\]{
   max-width: 444px;
-}
-.animate-fade{
-  animation: all 3s linear;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -814,82 +817,80 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.fade-enter{
-  opacity: 0;
-}
-.fade-active{
-  opacity: 1;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
-.fade-exit{
-  opacity: 1;
-}
-.fade-exit-active{
-  opacity: 0;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
 }
+
 .after\:top-\[50\%\]::after{
   content: var(--tw-content);
   top: 50%;
 }
+
 .after\:right-\[800px\]::after{
   content: var(--tw-content);
   right: 800px;
 }
+
 .after\:w-\[calc\(100\%-965px\)\]::after{
   content: var(--tw-content);
   width: calc(100% - 965px);
 }
+
 .after\:border-t::after{
   content: var(--tw-content);
   border-top-width: 1px;
 }
+
 .after\:opacity-25::after{
   content: var(--tw-content);
   opacity: 0.25;
 }
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: var(--tw-transform);
 }
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
+
 .hover\:border-b-\[3px\]:hover{
   border-bottom-width: 3px;
 }
+
 .hover\:border-b-gray-400:hover{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+
 .hover\:outline-\[31px\]:hover{
   outline-width: 31px;
 }
+
 .hover\:outline-\[\#ffffff4f\]:hover{
   outline-color: #ffffff4f;
 }
+
 .active\:cursor-pointer:active{
   cursor: pointer;
 }
+
 .active\:border-b-\[3px\]:active{
   border-bottom-width: 3px;
 }
+
 .active\:border-b-white:active{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+
 .active\:outline-\[\#ffffff27\]:active{
   outline-color: #ffffff27;
 }
+
 @media (min-width: 640px){
 
   .sm\:hidden{
@@ -900,6 +901,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-image: url(/src/assets/home/background-home-mobile.jpg);
   }
 }
+
 @media (min-width: 768px){
 
   .md\:m-0{
@@ -1208,6 +1210,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     outline-width: 57px;
   }
 }
+
 @media (min-width: 1024px){
 
   .lg\:absolute{
@@ -1589,6 +1592,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
 }
+
 @media (min-width: 1280px){
 
   .xl\:right-\[calc\(50vw-620px\)\]{

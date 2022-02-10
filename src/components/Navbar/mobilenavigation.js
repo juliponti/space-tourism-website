@@ -9,13 +9,13 @@ function MobileNavigation() {
 
   return (
     <nav
-      className={`fixed right-0 text-details flex flex-col items-end backdrop-blur-3xl px-[6px] z-10 md:hidden ${
+      className={`animation w-0 h-0 fixed right-0 text-details flex flex-col items-end backdrop-blur-3xl px-[6px] z-10 md:hidden ${
         open && "w-[236px] min-h-[99vh]"
       }`}
     >
       <Hamburger onToggle={() => setOpen(!open)} />
       {open && (
-        <ol className="flex flex-col justify-evenly items-start w-full h-full py-[52px] px-6 ">
+        <ol className="flex flex-col justify-evenly items-start w-full py-[52px] px-6 ">
           <NavLinks
             link="/space-tourism-website"
             number="00"

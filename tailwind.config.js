@@ -37,16 +37,6 @@ module.exports = {
         "mobile-technology":
           "url(/src/assets/technology/background-technology-mobile.jpg)",
       },
-      animation: {
-        fade: "all 3s linear",
-      },
-
-      keyframes: {
-        fade: {
-          "0%, 100%": { opacity: 1 },
-          "50%": { opacity: 0 },
-        },
-      },
     },
   },
 

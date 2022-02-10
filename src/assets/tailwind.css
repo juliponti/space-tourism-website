@@ -11,16 +11,3 @@
 .section-title {
   @apply text-white font-BarlowCo;
 }
-
-.fade-enter {
-  @apply opacity-0;
-}
-.fade-active {
-  @apply opacity-100 transition-opacity duration-200;
-}
-.fade-exit {
-  @apply opacity-100;
-}
-.fade-exit-active {
-  @apply opacity-0 transition-opacity duration-200;
-}

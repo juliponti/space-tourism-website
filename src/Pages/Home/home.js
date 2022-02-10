@@ -1,7 +1,7 @@
 import Header from "../../components/Header/header";
 import { Link } from "react-router-dom";
 
-function App() {
+function Home() {
   return (
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-home sm:bg-mobile-home md:bg-tablet-home lg:bg-desktop-home">
       <Header />
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

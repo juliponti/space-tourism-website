@@ -1,13 +1,31 @@
 import Header from "../../components/Header/header";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { data } from "../../data";
-import { CSSTransition } from "react-transition-group";
 
 const { destinations } = data;
 
 export default function Destination() {
   const [selectedPlanet, setSelectedPlanet] = useState(destinations[0]);
-  const [inProp, setInProp] = useState(false);
+
+  const planetImg = useRef();
+  const planetTitle = useRef();
+  const planetDistance = useRef();
+
+  function handleFadein(ref) {
+    ref.current.classList.add("fade-in");
+    setTimeout(() => {
+      ref.current.classList.remove("fade-in");
+    }, 900);
+  }
+
+  function handlePlanetClick(planet) {
+    setSelectedPlanet(planet);
+    handleFadein(planetImg);
+    handleFadein(planetTitle);
+
+    handleFadein(planetDistance);
+  }
+
   return (
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination lg:bg-desktop-destination">
       <Header />
@@ -24,25 +42,24 @@ export default function Destination() {
         </div>
 
         <div className="animate-fade flex flex-col justify-around items-center mt-8 px-6 md:mt-16 lg:flex-row lg:items-center lg:justify-between lg:max-w-[1300px] lg:mt-16 lg:mx-auto lg:px-24">
-          <div className="w-full lg:flex lg:justify-center lg:items-center lg:max-w-[445px] lg:w-[calc(100%-530px)] lg:ml-16 lg:pt-8 ">
+          <div
+            ref={planetImg}
+            className="w-full lg:flex lg:justify-center lg:items-center lg:max-w-[445px] lg:w-[calc(100%-530px)] lg:ml-16 lg:pt-8 "
+          >
             <div className="md:mx-auto md:h-fit md:w-[445px]">
-              <CSSTransition in={inProp} timeout={200}>
-                <img
-                  src={selectedPlanet.images.webp}
-                  alt={selectedPlanet.name}
-                  className="w-[445px] hidden md:block md:w-[300px] md:mx-auto lg:flex
+              <img
+                src={selectedPlanet.images.webp}
+                alt={selectedPlanet.name}
+                className="w-[445px] hidden md:block md:w-[300px] md:mx-auto lg:flex
                  lg:max-w-full lg:w-full"
-                />
-              </CSSTransition>
+              />
             </div>
 
-            <CSSTransition in={inProp} timeout={200} className="fade">
-              <img
-                src={selectedPlanet.images.png}
-                alt={selectedPlanet.name}
-                className="w-[170px] mx-auto md:hidden"
-              />
-            </CSSTransition>
+            <img
+              src={selectedPlanet.images.png}
+              alt={selectedPlanet.name}
+              className="w-[170px] mx-auto md:hidden"
+            />
           </div>
 
           <div className="mt-5 mx-auto max-w-lg text-center md:mt-12 lg:m-0 lg:w-[445px] lg:text-start">
@@ -54,14 +71,14 @@ export default function Destination() {
                       selectedPlanet.name === planet.name &&
                       "border-b-2 border-b-white text-white"
                     } `}
-                    onClick={(() => setSelectedPlanet(planet), setInProp(true))}
+                    onClick={() => handlePlanetClick(planet)}
                     key={planet.name}
                   >
                     {planet.name}
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col items-center">
+              <div ref={planetTitle} className="flex flex-col items-center">
                 <h2 className="font-Belle text-[56px] text-white leading-[102px] uppercase self-center md:text-5xl md:my-6 lg:self-start lg:text-8xl">
                   {selectedPlanet.name}
                 </h2>
@@ -71,7 +88,10 @@ export default function Destination() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center w-full mt-8 pt-8 border-t border-line md:flex-row md:mt-14 md:pt-7 md:mx-auto">
+            <div
+              ref={planetDistance}
+              className="flex flex-col justify-between items-center w-full mt-8 pt-8 border-t border-line md:flex-row md:mt-14 md:pt-7 md:mx-auto"
+            >
               <div className="leading-4 tracking-primary w-full mb-8 md:m-0 lg:text-left">
                 <h3 className="font-BarlowCo text-sm text-details tracking-primary">
                   AVG. DISTANCE
