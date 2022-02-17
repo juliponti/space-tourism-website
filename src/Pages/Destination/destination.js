@@ -1,6 +1,7 @@
 import Header from "../../components/Header/header";
 import { useState, useRef } from "react";
 import { data } from "../../data";
+import { handleFadein } from "../../utils";
 
 const { destinations } = data;
 
@@ -11,18 +12,10 @@ export default function Destination() {
   const planetTitle = useRef();
   const planetDistance = useRef();
 
-  function handleFadein(ref) {
-    ref.current.classList.add("fade-in");
-    setTimeout(() => {
-      ref.current.classList.remove("fade-in");
-    }, 900);
-  }
-
   function handlePlanetClick(planet) {
     setSelectedPlanet(planet);
     handleFadein(planetImg);
     handleFadein(planetTitle);
-
     handleFadein(planetDistance);
   }
 

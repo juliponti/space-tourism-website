@@ -1,6 +1,7 @@
 import Header from "../../components/Header/header";
 import { useState, useRef } from "react";
 import { data } from "../../data";
+import { handleFadein } from "../../utils";
 
 const { crew } = data;
 
@@ -10,13 +11,6 @@ export default function Crew() {
   const crewImg = useRef();
   const crewImgMobile = useRef();
   const crewText = useRef();
-
-  function handleFadein(ref) {
-    ref.current.classList.add("fade-in");
-    setTimeout(() => {
-      ref.current.classList.remove("fade-in");
-    }, 900);
-  }
 
   function handleCrewClick(item) {
     setSelectedCrew(item);

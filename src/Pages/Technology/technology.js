@@ -1,6 +1,7 @@
 import Header from "../../components/Header/header";
 import { useState, useRef } from "react";
 import { data } from "../../data";
+import { handleFadein } from "../../utils";
 
 const { technology } = data;
 
@@ -9,13 +10,6 @@ export default function Technology() {
   const launchImg = useRef();
   const launchText = useRef();
   const launchImgMobile = useRef();
-
-  function handleFadein(ref) {
-    ref.current.classList.add("fade-in");
-    setTimeout(() => {
-      ref.current.classList.remove("fade-in");
-    }, 900);
-  }
 
   function handleLaunchClick(item) {
     setSelectedTech(item);
