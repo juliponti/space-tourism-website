@@ -8,7 +8,7 @@ import "./styles.css";
 const App = () => {
   return (
     <Routes>
-      <Route path="/space-tourism-website" element={<Home />} />
+      <Route path="/space-tourism-website/" element={<Home />} />
       <Route
         path="/space-tourism-website/destination"
         element={<Destination />}
