@@ -1396,6 +1396,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: calc(100vh - 144px);
   }
 
+  .lg\:min-h-\[calc\(100vh-188px\)\]{
+    min-height: calc(100vh - 188px);
+  }
+
   .lg\:w-10{
     width: 2.5rem;
   }
