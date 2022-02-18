@@ -504,6 +504,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .min-h-\[calc\(100vh-64px\)\]{
   min-height: calc(100vh - 64px);
 }
+.min-h-\[calc\(100vh-130px\)\]{
+  min-height: calc(100vh - 130px);
+}
 .w-full{
   width: 100%;
 }
@@ -1037,12 +1040,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 0px;
   }
 
-  .md\:min-h-\[calc\(100vh-96px\)\]{
-    min-height: calc(100vh - 96px);
+  .md\:min-h-\[calc\(100vh-35px\)\]{
+    min-height: calc(100vh - 35px);
   }
 
-  .md\:min-h-\[calc\(100vh-130px\)\]{
-    min-height: calc(100vh - 130px);
+  .md\:min-h-\[calc\(100vh-96px\)\]{
+    min-height: calc(100vh - 96px);
   }
 
   .md\:w-12{
