@@ -1,4 +1,5 @@
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer";
 import { useState, useRef } from "react";
 import { data } from "../../data";
 import { handleFadein } from "../../utils";
@@ -82,6 +83,7 @@ export default function Technology() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

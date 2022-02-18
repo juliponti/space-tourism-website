@@ -468,6 +468,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
+.h-11{
+  height: 2.75rem;
+}
 .h-0{
   height: 0px;
 }
@@ -539,6 +542,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-10{
   width: 2.5rem;
+}
+.max-w-\[410px\]{
+  max-width: 410px;
 }
 .max-w-lg{
   max-width: 32rem;
@@ -681,14 +687,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-center{
   text-align: center;
 }
+.font-BarlowCo{
+  font-family: Barlow Condensed;
+}
 .font-Belle{
   font-family: Bellefair;
 }
 .font-Barlow{
   font-family: Barlow;
 }
-.font-BarlowCo{
-  font-family: Barlow Condensed;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-base{
   font-size: 1rem;
@@ -711,10 +725,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[80px\]{
   font-size: 80px;
-}
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-\[15px\]{
   font-size: 15px;
@@ -752,9 +762,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-primary{
   letter-spacing: 2.7px;
 }
+.text-blue-200{
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
+}
 .text-details{
   --tw-text-opacity: 1;
   color: rgb(208 214 249 / var(--tw-text-opacity));
+}
+.text-slate-200{
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -1021,6 +1039,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:min-h-\[calc\(100vh-96px\)\]{
     min-height: calc(100vh - 96px);
+  }
+
+  .md\:min-h-\[calc\(100vh-130px\)\]{
+    min-height: calc(100vh - 130px);
   }
 
   .md\:w-12{
