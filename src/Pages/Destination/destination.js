@@ -1,4 +1,5 @@
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer";
 import { useState, useRef } from "react";
 import { data } from "../../data";
 import { handleFadein } from "../../utils";
@@ -22,7 +23,7 @@ export default function Destination() {
   return (
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-destination md:bg-tablet-destination lg:bg-desktop-destination">
       <Header />
-      <main className="min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-144px)]">
+      <main className="min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-35px)] lg:min-h-[calc(100vh-144px)]">
         <div className="pt-6 text-center md:text-left md:pt-10 lg:text-left lg:pt-[76px]">
           <div className="md:px-6 lg:px-24 lg:max-w-[1300px] lg:m-auto">
             <h1 className="section-title text-base tracking-secondary md:px-6 md:text-lg lg:text-3xl">
@@ -105,6 +106,7 @@ export default function Destination() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

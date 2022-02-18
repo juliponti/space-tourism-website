@@ -1,12 +1,13 @@
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className="h-full bg-primary bg-cover bg-center bg-no-repeat bg-mobile-home sm:bg-mobile-home md:bg-tablet-home lg:bg-desktop-home">
       <Header />
-      <main className="pt-12 min-h-[calc(100vh-64px)] md:pt-[105px] md:min-h-[calc(100vh-96px)] lg:pt-[250px] lg:min-h-[calc(100vh-144px)]">
-        <div className="flex flex-col justify-evenly items-center px-6 mx-auto lg:flex-row lg:justify-between lg:items-end lg:px-24 lg:max-w-[1300px]">
+      <main className="pt-12 min-h-[calc(100vh-130px)] md:pt-[105px] lg:pt-[250px] lg:min-h-[calc(100vh-144px)]">
+        <section className="flex flex-col justify-evenly items-center px-6 mx-auto lg:flex-row lg:justify-between lg:items-end lg:px-24 lg:max-w-[1300px]">
           <div className="text-center max-w-md mx-auto md:max-w-[450px] lg:mr-5 lg:ml-0 lg:text-left">
             <h1 className="font-BarlowCo text-base text-details tracking-secondary leading-8 md:text-lg lg:text-3lg">
               SO, YOU WANT TO TRAVEL TO
@@ -32,8 +33,9 @@ function Home() {
               </span>
             </Link>
           </div>
-        </div>
+        </section>
       </main>
+      <Footer />
     </div>
   );
 }
